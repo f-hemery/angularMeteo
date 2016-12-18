@@ -1,0 +1,49 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Courbe</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+
+ <!--   <canvas baseChart
+            [data]="lineChartData"
+            [labels]="lineChartLabels"
+            [options]="lineChartOptions"
+            [chartType]="lineChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+-->
+<!--
+    <base-chart class="chart"
+                [data]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [chartType]="lineChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></base-chart>
+-->
+
+<!--
+    <base-chart class="chart"
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [colors]="lineChartColors"
+                [legend]="lineChartLegend"
+                [chartType]="lineChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></base-chart>
+-->
+</ion-content>
